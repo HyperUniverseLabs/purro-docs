@@ -1,21 +1,34 @@
 import { Footer, Layout, Navbar } from "nextra-theme-docs";
 import { Banner, Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
+import Image from "next/image";
 import "./globals.css";
 
 export const metadata = {
   // Define your metadata here
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+  title: "Purro",
+  description: "Purro documentation and blog",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>;
 const navbar = (
   <Navbar
-    logo={<b>Nextra</b>}
+    logo={
+      <div className="flex items-center gap-2">
+        <Image src="/favicon.svg" alt="Logo" width={24} height={24} />
+        <b>Purro</b>
+      </div>
+    }
     // ... Your additional navbar options
   />
 );
-const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>;
+const footer = (
+  <Footer>MIT {new Date().getFullYear()} © HyperUniverseLabs.</Footer>
+);
 
 export default async function RootLayout({ children }) {
   return (
@@ -34,7 +47,7 @@ export default async function RootLayout({ children }) {
       </Head>
       <body>
         <Layout
-          banner={banner}
+          // banner={banner}
           navbar={navbar}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
