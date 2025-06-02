@@ -26,6 +26,7 @@ export default {
     theme: {
       toc: false,
       sidebar: false,
+      layout: "full",
     },
   },
   blog: {
@@ -34,7 +35,6 @@ export default {
     theme: {
       sidebar: false,
       toc: false,
-      timestamp: false,
     },
   },
 };
