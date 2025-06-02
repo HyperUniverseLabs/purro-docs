@@ -9,7 +9,7 @@ import {
 
 const SimpleRoadmapCard = () => {
   return (
-    <div className="mt-4 space-y-2">
+    <div className="mt-4 space-y-4">
       {/* Roadmap Timeline */}
       {roadmapPhases.map((phase, index) => {
         return (

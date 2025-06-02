@@ -2,7 +2,7 @@ export const roadmapPhases = [
     {
         phase: "Phase 1",
         title: "Foundation & Setup",
-        status: "completed",
+        status: "in-progress",
         description: "Project foundation, documentation, and community building",
         tasks: [
             {
@@ -46,7 +46,7 @@ export const roadmapPhases = [
     {
         phase: "Phase 2",
         title: "Token Launch & Community",
-        status: "completed",
+        status: "in-progress",
         description: "PURRO token launch, airdrop campaign, and business development",
         tasks: [
             {
