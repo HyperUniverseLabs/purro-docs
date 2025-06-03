@@ -1,0 +1,107 @@
+# Architecture Overview
+
+Purro consists of three core components, each with its own specialized architecture designed for optimal performance within the Hyperliquid ecosystem.
+
+## 🏦 DeFi Hub Architecture
+
+### Frontend Layer
+
+| **React.js Application** |
+| :----------------------- |
+| • Wallet Interface       |
+| • Trading Interface      |
+| • Swap Interface         |
+| • Market Interface       |
+| • Analytics Dashboard    |
+
+### Backend Layer
+
+| **Node.js API Server** |
+| :--------------------- |
+| • Authentication       |
+| • Data Aggregation     |
+| • Order Management     |
+| • Risk Engine          |
+| • Liquidity Routing    |
+
+### Blockchain Layer
+
+| **HyperCore**  |
+| :------------- |
+| • Order Books  |
+| • Spot Trading |
+| • Perpetuals   |
+
+| **HyperEVM**          |
+| :-------------------- |
+| • Smart Contracts     |
+| • DeFi Protocols      |
+| • Cross-Chain Bridges |
+
+## 🤖 PurroBot Architecture
+
+### Monitoring & Data Collection
+
+| **Data Sources**                         |
+| :--------------------------------------- |
+| • Notifications Center                   |
+| • Trending Tokens (HyperLiquid/HyperEVM) |
+| • Top 20 Tokens Tracker                  |
+| • 24h Change Monitor                     |
+| • Price Movement Alerts (10%+ threshold) |
+
+### Processing & Intelligence
+
+| **Analysis Engine**           |
+| :---------------------------- |
+| • Database Integration        |
+| • Real-time Data Processing   |
+| • Market Sentiment Analysis   |
+| • X (Twitter) API Integration |
+| • Alert Logic & Filtering     |
+
+### Notification & Delivery
+
+| **Multi-Channel Output**      |
+| :---------------------------- |
+| • Web Push Notifications      |
+| • Website Alert System        |
+| • Mobile Push Notifications   |
+| • X (Twitter) Bot Integration |
+
+## ⚡ HyperEVM DEX Aggregator Architecture
+
+### Aggregation Layer
+
+| **DEX Integration**         |
+| :-------------------------- |
+| • Cross-DEX Connectivity    |
+| • Liquidity Pool Monitoring |
+| • Real-time Price Feeds     |
+| • Routing Optimization      |
+
+### Execution Layer
+
+| **Smart Routing**          |
+| :------------------------- |
+| • Optimal Path Calculation |
+| • Slippage Minimization    |
+| • Gas Optimization         |
+| • Multi-hop Execution      |
+
+## System Integration Flow
+
+```
+DeFi Hub ←→ PurroBot ←→ HyperEVM DEX Aggregator
+    ↓           ↓              ↓
+HyperCore   Database    HyperEVM Smart Contracts
+    ↓           ↓              ↓
+HyperEVM    X API      Cross-DEX Protocols
+```
+
+### Component Interaction:
+
+1. **DeFi Hub** serves as the primary user interface and aggregation platform
+2. **PurroBot** provides intelligent market monitoring and notifications across all components
+3. **HyperEVM DEX Aggregator** optimizes cross-DEX transactions and liquidity routing
+4. All components share data through secure APIs and database integration

@@ -1,5 +1,11 @@
 export default {
   index: {
-    title: "Welcome to Purro",
+    title: "What is Purro?",
+  },
+  "key-features": {
+    title: "Key Features",
+  },
+  architecture: {
+    title: "Architecture",
   },
 };
