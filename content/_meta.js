@@ -15,10 +15,6 @@ export default {
   changelog: {
     title: "Changelog",
     type: "page",
-    theme: {
-      toc: false,
-      timestamp: false,
-    },
   },
   roadmap: {
     title: "Roadmap",
@@ -27,14 +23,6 @@ export default {
       toc: false,
       sidebar: false,
       layout: "full",
-    },
-  },
-  blog: {
-    title: "Blog",
-    type: "page",
-    theme: {
-      sidebar: false,
-      toc: false,
     },
   },
 };
