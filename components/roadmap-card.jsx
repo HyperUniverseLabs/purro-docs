@@ -16,7 +16,7 @@ const SimpleRoadmapCard = () => {
           <div key={index}>
             {/* Phase content */}
             <div>
-              <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 hover:shadow-md transition-shadow duration-200 border border-gray-200 dark:border-gray-600">
+              <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-3 md:p-6 hover:shadow-md transition-shadow duration-200 border border-gray-200 dark:border-gray-600">
                 {/* Phase header */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
